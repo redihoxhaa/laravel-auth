@@ -21,6 +21,7 @@ return new class extends Migration
             $table->enum('category', ['frontend', 'backend']);
             $table->string('language', 20);
             $table->text('thumb')->nullable();
+            $table->string('slug')->unique()->nullable();
             $table->timestamps();
         });
     }

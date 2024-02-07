@@ -65,7 +65,7 @@
 
                                             {{-- Pulsante di modifica --}}
                                             <div class="col-6 text-center">
-                                                <a href="{{ route('admin.projects.edit', $project->id) }}"
+                                                <a href="{{ route('admin.projects.edit', $project) }}"
                                                     class="btn btn-warning text-uppercase w-75">Edit</a>
                                             </div>
 
@@ -101,7 +101,7 @@
 
                                                                 {{-- Pulsante elimina --}}
                                                                 <form
-                                                                    action="{{ route('admin.projects.destroy', $project->id) }}"
+                                                                    action="{{ route('admin.projects.destroy', $project) }}"
                                                                     method="POST">
                                                                     @csrf
                                                                     @method('DELETE')

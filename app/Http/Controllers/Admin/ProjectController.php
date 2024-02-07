@@ -83,6 +83,8 @@ class ProjectController extends Controller
         $data = $request->validated();
 
         $project->update($data);
+        $project->slug = Str::slug($data['title']);
+        $project->save();
 
         return redirect()->route('admin.projects.show', $project);
     }

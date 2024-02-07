@@ -37,7 +37,6 @@ class UpdateProjectRequest extends FormRequest
             ],
             'language' => 'required|string',
             'thumb' => 'required|url',
-            'slug' => 'required|unique:projects,slug,' . $this->project->id . '|max:50',
         ];
     }
 }

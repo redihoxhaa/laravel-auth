@@ -37,7 +37,6 @@ class StoreProjectRequest extends FormRequest
             ],
             'language' => 'required|string',
             'thumb' => 'required|url',
-            'slug' => 'required|string|max:255|unique:projects',
         ];
     }
 }

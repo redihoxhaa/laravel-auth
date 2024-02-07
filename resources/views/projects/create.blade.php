@@ -97,17 +97,6 @@
                         @enderror
                     </div>
 
-
-                    {{-- Input slug --}}
-                    <div class="input-group flex-nowrap">
-                        <span class="input-group-text text-capitalize">slug</span>
-                        <input type="text" class="form-control @error('slug') is-invalid @enderror" name="slug"
-                            value="{{ old('slug') }}">
-                        @error('slug')
-                            <div class="alert alert-danger m-0">{{ $message }}</div>
-                        @enderror
-                    </div>
-
                     {{-- Bottone submit --}}
                     <button type="submit" class="btn btn-success w-25 my-3">Create project</button>
                 </form>
